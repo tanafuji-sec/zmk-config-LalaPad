@@ -15,9 +15,11 @@
 #define SCROLL_L_LAYER  7
 
 // Mouse Scroll Value
+
 #define ZMK_POINTING_DEFAULT_SCRL_VAL 100
 
 // cirque trackpad input&layer control
+
 &glidepoint_listener_R {
     input-processors =
         <&zip_xy_transform (INPUT_TRANSFORM_XY_SWAP | INPUT_TRANSFORM_X_INVERT | INPUT_TRANSFORM_Y_INVERT)>,
@@ -40,6 +42,7 @@
             <&zip_scroll_scaler 1 8>;
     };
 };
+
 &glidepoint_listener_L {
     input-processors =
         <&zip_xy_transform (INPUT_TRANSFORM_XY_SWAP | INPUT_TRANSFORM_X_INVERT | INPUT_TRANSFORM_Y_INVERT)>,
@@ -64,9 +67,9 @@
 };
 
 / {
-
     behaviors {
         // Encoder to Mouse Scroll
+
         scroll_up_down: sensor_scroll_up_down {
             compatible = "zmk,behavior-sensor-rotate";
             #sensor-binding-cells = <0>;
@@ -120,6 +123,7 @@
             mods = <(MOD_LSFT|MOD_RSFT)>;
             label = "DOT_COMMA";
         };
+
         pls_minus: pls_minus {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
@@ -128,6 +132,7 @@
             mods = <(MOD_LSFT|MOD_RSFT)>;
             label = "PLS_MINUS";
         };
+
         allow_pageup: allow_pageup {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
@@ -136,6 +141,7 @@
             mods = <(MOD_LCTL|MOD_RCTL)>;
             label = "ALLOW_PAGEUP";
         };
+
         allow_pagedown: allow_pagedown {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
@@ -144,6 +150,7 @@
             mods = <(MOD_LCTL|MOD_RCTL)>;
             label = "ALLOW_PAGEDOWN";
         };
+
         allow_home: allow_home {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
@@ -152,6 +159,7 @@
             mods = <(MOD_LCTL|MOD_RCTL)>;
             label = "ALLOW_HOME";
         };
+
         allow_end: allow_end {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
@@ -160,6 +168,7 @@
             mods = <(MOD_LCTL|MOD_RCTL)>;
             label = "ALLOW_END";
         };
+
         mt2: mod_tap2 {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
@@ -213,24 +222,25 @@
 
         SYSTEM_LAYER {
             display-name = "system_layer";
-            sensor-bindings = <&scroll_down_up>,<&volume_up_down>;
+            sensor-bindings = <&scroll_down_up>, <&volume_up_down>;
+
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans &out OUT_TOG &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4
-&trans  &trans  &trans  &trans  &bootloader  &sys_reset &sys_reset &bootloader &studio_unlock &bt BT_CLR &bt BT_CLR_ALL &trans
-&trans  &trans  &trans  &trans  &trans  &trans &trans &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans                                  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans       &trans      &out OUT_TOG  &bt BT_SEL 0  &bt BT_SEL 1    &bt BT_SEL 2  &bt BT_SEL 3    &bt BT_SEL 4
+&trans  &trans  &trans  &trans  &bootloader  &sys_reset  &sys_reset    &bootloader   &studio_unlock  &bt BT_CLR    &bt BT_CLR_ALL  &trans
+&trans  &trans  &trans  &trans  &trans       &trans      &trans        &trans        &trans          &trans        &trans          &trans
+&trans  &trans  &trans  &trans  &trans       &trans      &trans        &trans        &trans          &trans        &trans          &trans
+                &trans  &trans  &trans       &trans      &trans        &trans        &trans          &trans
             >;
         };
 
         MOUSE_R_LAYER {
             display-name = "mouse_r_layer";
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &trans   &trans   &trans     &trans     &trans     &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans   &trans   &mkp LCLK  &mkp MCLK  &mkp RCLK  &mo SCROLL_R_LAYER
-&trans  &trans  &trans  &trans  &trans  &trans  &trans   &trans   &mkp MB4   &mkp MB5   &trans     &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans   &trans   &trans     &trans     &trans     &trans
-&trans  &trans  &trans  &trans                                    &trans     &trans     &trans     &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+                &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
             >;
         };
 
@@ -241,18 +251,18 @@
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans                                  &trans  &trans  &trans  &trans
+                &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
             >;
         };
 
         MOUSE_L_LAYER {
             display-name = "mouse_l_layer";
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                       &trans  &trans  &trans  &trans  &trans  &trans
-&mo SCROLL_R_LAYER  &mkp RCLK  &mkp MCLK  &mkp LCLK  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &mkp MB5  &mkp MB4  &trans  &trans                   &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                       &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans                                                       &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+                &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
             >;
         };
 
@@ -263,9 +273,8 @@
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans                                  &trans  &trans  &trans  &trans
+                &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
             >;
         };
     };
-    
 };
