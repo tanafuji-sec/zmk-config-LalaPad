@@ -201,21 +201,21 @@
             sensor-bindings = <&scroll_left_right>, <&scroll_left_right>;
 
             bindings = <
-&kp LANG_ZENKAKUHANKAKU  &kp NUMBER_1    &kp NUMBER_2  &kp NUMBER_3      &kp NUMBER_4   &kp NUMBER_5      &kp PAGE_UP    &kp PRINTSCREEN  &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_MINUS
-&kp TILDE                &kp NUMBER_6    &kp NUMBER_7  &kp NUMBER_8      &kp NUMBER_9   &kp NUMBER_0      &kp HOME       &kp END          &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp KP_PLUS
-&trans                   &trans          &trans        &kp LS(NUMBER_1)  &kp LS(SLASH)  &kp LS(NUMBER_2)  &kp PAGE_DOWN  &kp KP_MINUS     &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp KP_ASTERISK
-&kp LANGUAGE_2           &kp LANGUAGE_1  &trans        &trans            &trans         &kp KP_NUMLOCK    &kp SPACE      &kp BACKSPACE    &kp DEL          &kp KP_NUMBER_0  &dot_comma       &kp KP_DIVIDE
-                                         &trans        &trans            &trans         &trans            &trans         &trans           &trans           &trans
+&kp LANG_ZENKAKUHANKAKU  &kp NUMBER_1    &kp NUMBER_2  &kp NUMBER_3      &kp NUMBER_4   &kp NUMBER_5      &kp PG_UP        &kp PG_DN      &kp MINUS  &kp N7  &kp N8   &kp N9
+&kp TILDE                &kp NUMBER_6    &kp NUMBER_7  &kp NUMBER_8      &kp NUMBER_9   &kp NUMBER_0      &kp HOME         &kp END        &kp PLUS   &kp N4  &kp N5   &kp N6
+&trans                   &trans          &trans        &kp LS(NUMBER_1)  &kp LS(SLASH)  &kp LS(NUMBER_2)  &kp PRINTSCREEN  &kp FSLH       &kp STAR   &kp N1  &kp N2   &kp N3
+&kp LANGUAGE_2           &kp LANGUAGE_1  &trans        &trans            &trans         &kp KP_NUMLOCK    &kp SPACE        &kp BACKSPACE  &kp DEL    &kp N0  &kp DOT  &kp RET
+                                         &trans        &trans            &trans         &trans            &trans           &trans         &trans     &trans
             >;
         };
 
         TERTIARY_LAYER {
             display-name = "tertiary_layer";
             bindings = <
-&trans  &kp F1   &kp F2   &kp F3   &kp F4   &kp F5   &trans  &trans     &trans     &trans            &trans             &kp LG(MINUS)
-&trans  &kp F6   &kp F7   &kp F8   &kp F9   &kp F10  &trans  &mkp LCLK  &mkp RCLK  &trans            &trans             &kp LG(PLUS)
-&trans  &kp F11  &kp F12  &kp F13  &kp F14  &kp F15  &trans  &trans     &trans     &trans            &trans             &kp LG(NUMBER_0)
-&trans  &trans   &trans   &trans   &trans   &trans   &trans  &mkp MB4   &mkp MB5   &kp LS(NUMBER_9)  &kp DOUBLE_QUOTES  &kp LS(NUMBER_0)
+&trans  &kp F1   &kp F2   &kp F3   &kp F4   &kp F5   &trans  &trans     &trans     &trans      &trans      &kp LG(MINUS)
+&trans  &kp F6   &kp F7   &kp F8   &kp F9   &kp F10  &trans  &mkp LCLK  &mkp RCLK  &trans      &trans      &kp LG(PLUS)
+&trans  &kp F11  &kp F12  &kp F13  &kp F14  &kp F15  &trans  &trans     &trans     &trans      &trans      &kp LG(NUMBER_0)
+&trans  &trans   &trans   &trans   &trans   &trans   &trans  &mkp MB4   &mkp MB5   &kp LS(N8)  &kp LS(N9)  &kp LS(NUMBER_0)
                  &trans   &trans   &trans   &trans   &trans  &trans     &trans     &trans
             >;
         };
