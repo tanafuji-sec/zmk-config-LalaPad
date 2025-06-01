@@ -201,11 +201,11 @@
             sensor-bindings = <&scroll_left_right>, <&scroll_left_right>;
 
             bindings = <
-&kp LANG_ZENKAKUHANKAKU  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3      &kp NUMBER_4   &kp NUMBER_5      &kp PG_UP                              &kp PG_DN      &kp MINUS  &kp N7  &kp N8   &kp N9
-&kp TILDE                &kp NUMBER_6  &kp NUMBER_7  &kp NUMBER_8      &kp NUMBER_9   &kp NUMBER_0      &kp HOME                               &kp END        &kp PLUS   &kp N4  &kp N5   &kp N6
-&trans                   &trans        &trans        &kp LS(NUMBER_1)  &kp LS(SLASH)  &kp LS(NUMBER_2)  &mt2 LS(LG(LC(NUMBER_4))) PRINTSCREEN  &kp FSLH       &kp STAR   &kp N1  &kp N2   &kp N3
-&trans                   &trans        &trans        &trans            &trans         &kp KP_NUMLOCK    &kp SPACE                              &kp BACKSPACE  &kp DEL    &kp N0  &kp DOT  &kp RET
-                                       &trans        &trans            &trans         &trans            &trans                                 &trans         &trans     &trans
+&kp LANG_ZENKAKUHANKAKU  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3      &kp NUMBER_4   &kp NUMBER_5      &kp PG_UP                        &kp PG_DN      &kp MINUS  &kp N7  &kp N8   &kp N9
+&kp TILDE                &kp NUMBER_6  &kp NUMBER_7  &kp NUMBER_8      &kp NUMBER_9   &kp NUMBER_0      &kp HOME                         &kp END        &kp PLUS   &kp N4  &kp N5   &kp N6
+&trans                   &trans        &trans        &kp LS(NUMBER_1)  &kp LS(SLASH)  &kp LS(NUMBER_2)  &mt2 PRINTSCREEN LS(LC(LG(N4)))  &kp FSLH       &kp STAR   &kp N1  &kp N2   &kp N3
+&trans                   &trans        &trans        &trans            &trans         &kp KP_NUMLOCK    &kp SPACE                        &kp BACKSPACE  &kp DEL    &kp N0  &kp DOT  &kp RET
+                                       &trans        &trans            &trans         &trans            &trans                           &trans         &trans     &trans
             >;
         };
 
