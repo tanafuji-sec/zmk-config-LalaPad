@@ -190,7 +190,7 @@
             bindings = <
 &mt2 LANG2 ESC  &kp Q         &kp W         &kp E            &kp R        &kp T          &kp Y          &kp U          &kp I            &kp O             &kp P              &mt EQUAL MINUS
 &kp TAB         &kp A         &kp S         &kp D            &kp F        &kp G          &kp H          &kp J          &kp K            &kp L             &kp SEMI           &kp SQT
-&kp LSHFT       &kp Z         &kp X         &kp C            &kp V        &kp B          &kp N          &kp M          &kp COMMA        &kp PERIOD        &kp SLASH          &kp BACKSLASH
+&kp LSHFT       &kp Z         &kp X         &kp C            &kp V        &kp B          &kp N          &kp M          &kp COMMA        &kp PERIOD        &kp SLASH          &mt UNDERSCORE BACKSLASH
 &kp LCTRL       &kp LEFT_ALT  &kp LEFT_GUI  &kp SPACE        &lt 1 SPACE  &lt 2 N        &lt 3 B        &kp BACKSPACE  &kp RET          &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp RIGHT_SHIFT
                               &allow_end    &allow_pagedown  &allow_home  &allow_pageup  &allow_pageup  &allow_home    &allow_pagedown  &allow_end
             >;
