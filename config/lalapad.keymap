@@ -202,7 +202,7 @@
 
             bindings = <
 &kp EQUAL  &kp NUMBER_1      &kp NUMBER_2      &kp NUMBER_3      &kp NUMBER_4   &kp NUMBER_5  &kp KP_NUMLOCK                   &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_DIVIDE  &kp KP_MINUS
-&kp TILDE  &kp NUMBER_6      &kp NUMBER_7      &kp NUMBER_8      &kp NUMBER_9   &kp NUMBER_0  &kp K_CALCULATOR                 &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp HOME       &kp KP_PLUS
+&kp GRAVE  &kp NUMBER_6      &kp NUMBER_7      &kp NUMBER_8      &kp NUMBER_9   &kp NUMBER_0  &kp K_CALCULATOR                 &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp HOME       &kp KP_PLUS
 &trans     &kp LS(NUMBER_1)  &kp LS(NUMBER_2)  &kp LS(NUMBER_3)  &kp LS(SLASH)  &kp LS(N7)    &mt2 PRINTSCREEN LS(LC(LG(N4)))  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp END        &kp KP_ASTERISK
 &trans     &trans            &trans            &trans            &trans         &trans        &kp DELETE                       &kp BACKSPACE    &kp KP_N0        &kp KP_NUMBER_0  &kp KP_DOT     &kp KP_ENTER
                              &trans            &trans            &trans         &trans        &trans                           &trans           &trans           &trans
