@@ -188,10 +188,10 @@
             sensor-bindings = <&scroll_down_up>, <&scroll_up_down>;
 
             bindings = <
-&mt2 LANG2 ESC  &kp Q         &kp W         &kp E            &kp R        &kp T          &kp Y          &kp U          &kp I            &kp O            &kp P             &kp MINUS
-&kp TAB         &kp A         &kp S         &kp D            &kp F        &kp G          &kp H          &kp J          &kp K            &kp L            &kp SEMI          &kp BSLH
-&kp LSHFT       &kp Z         &kp X         &kp C            &kp V        &kp B          &kp N          &kp M          &kp COMMA        &kp PERIOD       &kp SLASH         &mt EQUAL SQT
-&kp LCTRL       &kp LEFT_ALT  &kp LEFT_GUI  &kp SPACE        &lt 1 SPACE  &lt 2 N        &lt 3 B        &kp BACKSPACE  &kp RET          &kp RIGHT_SHIFT  &kp LEFT_BRACKET  &kp RIGHT_BRACKET
+&mt2 LANG2 ESC  &kp Q         &kp W         &kp E            &kp R        &kp T          &kp Y          &kp U          &kp I            &kp O            &kp P                              &kp MINUS
+&kp TAB         &kp A         &kp S         &kp D            &kp F        &kp G          &kp H          &kp J          &kp K            &kp L            &kp SEMI                           &kp BSLH
+&kp LSHFT       &kp Z         &kp X         &kp C            &kp V        &kp B          &kp N          &kp M          &kp COMMA        &kp PERIOD       &kp SLASH                          &mt EQUAL SQT
+&kp LCTRL       &kp LEFT_ALT  &kp LEFT_GUI  &kp SPACE        &lt 1 SPACE  &lt 2 N        &lt 3 B        &kp BACKSPACE  &kp RET          &kp RIGHT_SHIFT  &mt LEFT_PARENTHESIS LEFT_BRACKET  &mt RIGHT_PARENTHESIS RIGHT_BRACKET
                               &allow_end    &allow_pagedown  &allow_home  &allow_pageup  &allow_pageup  &allow_home    &allow_pagedown  &allow_end
             >;
         };
@@ -212,10 +212,10 @@
         TERTIARY_LAYER {
             display-name = "tertiary_layer";
             bindings = <
-&trans  &kp F1   &kp F2   &kp F3     &kp F4     &kp F5   &trans  &trans          &kp UP_ARROW    &trans           &trans      &kp LG(MINUS)
-&trans  &kp F6   &kp F7   &kp F8     &kp F9     &kp F10  &trans  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans      &kp LG(PLUS)
-&trans  &kp F11  &kp F12  &kp F13    &kp F14    &kp F15  &trans  &trans          &trans          &trans           &trans      &kp LG(NUMBER_0)
-&trans  &trans   &trans   &kp LANG2  &kp LANG1  &trans   &trans  &mkp MB4        &mkp MB5        &kp LS(N8)       &kp LS(N9)  &kp LS(NUMBER_0)
+&trans  &kp F1   &kp F2   &kp F3     &kp F4     &kp F5   &trans  &trans          &kp UP_ARROW    &trans           &trans  &kp LG(MINUS)
+&trans  &kp F6   &kp F7   &kp F8     &kp F9     &kp F10  &trans  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans  &kp LG(PLUS)
+&trans  &kp F11  &kp F12  &kp F13    &kp F14    &kp F15  &trans  &trans          &trans          &trans           &trans  &kp LG(NUMBER_0)
+&trans  &trans   &trans   &kp LANG2  &kp LANG1  &trans   &trans  &mkp MB4        &mkp MB5        &trans           &trans  &trans
                  &trans   &trans     &trans     &trans   &trans  &trans          &trans          &trans
             >;
         };
