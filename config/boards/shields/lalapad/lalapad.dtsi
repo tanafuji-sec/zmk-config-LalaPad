@@ -82,6 +82,11 @@
     };
 };
 
+// NFC pins (P0.09, P0.10) used as SPI CS
+&nfct {
+    status = "disabled";
+};
+
 // SPI
 &qspi {
 	status = "disabled";
