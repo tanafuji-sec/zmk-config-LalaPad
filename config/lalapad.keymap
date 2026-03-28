@@ -216,11 +216,11 @@
         TERTIARY_LAYER {
             display-name = "tertiary_layer";
             bindings = <
-&trans  &kp F1   &kp F2   &kp F3     &kp F4     &kp F5   &trans  &trans          &kp UP_ARROW    &trans           &trans                &kp LG(MINUS)
-&trans  &kp F6   &kp F7   &kp F8     &kp F9     &kp F10  &trans  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans                &kp LG(PLUS)
-&trans  &kp F11  &kp F12  &kp F13    &kp F14    &kp F15  &trans  &trans          &trans          &trans           &trans                &kp LG(NUMBER_0)
-&trans  &trans   &trans   &kp LANG2  &kp LANG1  &trans   &trans  &mkp MB4        &mkp MB5        &trans           &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS
-                 &trans   &trans     &trans     &trans   &trans  &trans          &trans          &trans
+&trans  &kp F1   &kp F2   &kp F3     &kp F4     &kp F5   &trans          &trans          &kp UP_ARROW    &trans           &trans                &kp LG(MINUS)
+&trans  &kp F6   &kp F7   &kp F8     &kp F9     &kp F10  &trans          &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans                &kp LG(PLUS)
+&trans  &kp F11  &kp F12  &kp F13    &kp F14    &kp F15  &trans          &trans          &trans          &trans           &trans                &kp LG(NUMBER_0)
+&trans  &trans   &trans   &kp LANG2  &kp LANG1  &trans   &kp KP_NUMLOCK  &mkp MB4        &mkp MB5        &trans           &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS
+                 &trans   &trans     &trans     &trans   &trans          &trans          &trans          &trans
             >;
         };
 
